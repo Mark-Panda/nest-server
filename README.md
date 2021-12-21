@@ -115,3 +115,7 @@ Column('simple-json', { comment: 'json 数据' }) = ColumnJson('json 数据');
 - typeorm 针对数据库的数据转化工具
 - http.exception.filter 异常拦截器
 - transform.interceptor 响应参数转化为统一格式
+
+## 参考
+
+> 服务参考[nest-server 项目](https://github.com/dyb881/nest-serve)
