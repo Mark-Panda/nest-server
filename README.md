@@ -1,11 +1,6 @@
 # Nest Serve v3
 
-使用 Nestjs 8.x 以微服务方式开发的基础管理后台服务，并搭配 React 开发的管理后台前端（可自行根据 swagger 的接口开发对应的管理后台前端）
-
-## 旧版本
-
-- [v2 使用 monorepo 模式开发](https://github.com/dyb881/nest-serve/tree/monorepo)
-- [v1 使用 multirepo 模式开发](https://github.com/dyb881/nest-serve/tree/multirepo)
+使用 Nestjs 8.x 以微服务方式开发的基础管理后台服务（可自行根据 swagger 的接口开发对应的管理后台前端）
 
 ## 使用方法
 
@@ -30,8 +25,6 @@ NODE_ENV=production yarn start // 加载 production.yaml 覆盖配置
 
 ```sh
 yarn start:dev termial
-yarn start:dev infos
-yarn start:dev admin
 ```
 
 ### 部署
@@ -41,23 +34,6 @@ yarn build:all // 打包所有
 yarn pm2 // 用 pm2 运行所有服务
 yarn pm2:pd // 使用 /config/production.yaml + pm2 运行所有服务
 ```
-
-## 基础服务
-
-- account 账号管理模块
-  - admin 管理员账号
-  - admin-role 管理员角色
-  - user 用户账号
-- infos 信息管理模块
-  - category 信息分类
-  - article 文章列表
-
-## 网关服务
-
-- admin 管理后台网关
-  - account 账号管理相关接口
-  - infos 信息管理相关接口
-  - auth 鉴权接口
 
 ## 自定义库
 
@@ -71,9 +47,7 @@ yarn pm2:pd // 使用 /config/production.yaml + pm2 运行所有服务
   - multer 文件模块初始化
   - 缓存模块初始化
   - jwt 鉴权模块初始化
-  - 阿里云短信服务模块
   - files 文件上传模块
-  - 阿里云 oss 对象储存模块
 - logger 日志模块
 
 ### public-class 公共类
@@ -141,25 +115,3 @@ Column('simple-json', { comment: 'json 数据' }) = ColumnJson('json 数据');
 - typeorm 针对数据库的数据转化工具
 - http.exception.filter 异常拦截器
 - transform.interceptor 响应参数转化为统一格式
-
-## 配套 UI 效果图（兼容移动端）
-
-在[cra-template-seasoning](https://github.com/dyb881/cra-template-seasoning)中使用 pc-admin 模版
-
-![效果图](https://files.bittyshow.top/github/nest-serve-1.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-2.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-3.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-4.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-5.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-6.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-7.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-8.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-9.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-10.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-11.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-12.png)
-![效果图](https://files.bittyshow.top/github/nest-serve-13.png)
-
-## 如果觉得项目还不错，请打赏一波，您的支持是我最大的动力。
-
-![二维码](https://files.bittyshow.top/pay.png)

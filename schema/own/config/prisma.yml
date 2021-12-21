@@ -1,0 +1,14 @@
+
+endpoint: http://localhost:4466/own
+datamodel: 
+  - ../models/base.graphql
+  - ../models/builtInData.graphql
+  - ../models/directive.graphql
+  - ../models/aa.graphql
+ 
+secret: hollysys-mes-secret
+hooks:
+  post-deploy:
+    - graphql get-schema --project own
+    - graphql-merge --project own
+        

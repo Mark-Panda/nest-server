@@ -1,0 +1,21 @@
+"""
+模型位置信息
+"""
+type ModelPosition {
+  "唯一ID"
+  id: ID! @id
+  "模型归属文件"
+  adscriptionModel: String!
+  "模型名称"
+  modelName: String! @unique
+  "模型类型"
+  modelType: String!
+  "模型位置信息"
+  modelPosition: Json
+  "是否内置模型  默认不是"
+  IsBuildInSys: Boolean @default(value: false)
+  "创建时间"
+  createdAt: DateTime! @createdAt
+  "更新时间"
+  updatedAt: DateTime! @updatedAt
+}

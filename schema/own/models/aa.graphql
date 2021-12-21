@@ -1,0 +1,5 @@
+type Los {
+  id: ID! @id
+  createAt: DateTime! @createdAt
+  updateAt: DateTime! @updatedAt
+}

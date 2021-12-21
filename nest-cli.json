@@ -1,0 +1,55 @@
+{
+    "collection": "@nestjs/schematics",
+    "sourceRoot": "apps/termial/src",
+    "compilerOptions": {
+        "webpack": true,
+        "tsConfigPath": "apps/termial/tsconfig.app.json"
+    },
+    "projects": {
+        "termial": {
+            "type": "application",
+            "root": "apps/termial",
+            "entryFile": "main",
+            "sourceRoot": "apps/termial/src",
+            "compilerOptions": {
+                "tsConfigPath": "apps/termial/tsconfig.app.json"
+            }
+        },
+        "public-tool": {
+            "type": "library",
+            "root": "libs/public-tool",
+            "entryFile": "index",
+            "sourceRoot": "libs/public-tool/src",
+            "compilerOptions": {
+                "tsConfigPath": "libs/public-tool/tsconfig.lib.json"
+            }
+        },
+        "public-decorator": {
+            "type": "library",
+            "root": "libs/public-decorator",
+            "entryFile": "index",
+            "sourceRoot": "libs/public-decorator/src",
+            "compilerOptions": {
+                "tsConfigPath": "libs/public-decorator/tsconfig.lib.json"
+            }
+        },
+        "public-module": {
+            "type": "library",
+            "root": "libs/public-module",
+            "entryFile": "index",
+            "sourceRoot": "libs/public-module/src",
+            "compilerOptions": {
+                "tsConfigPath": "libs/public-module/tsconfig.lib.json"
+            }
+        },
+        "public-class": {
+            "type": "library",
+            "root": "libs/public-class",
+            "entryFile": "index",
+            "sourceRoot": "libs/public-class/src",
+            "compilerOptions": {
+                "tsConfigPath": "libs/public-class/tsconfig.lib.json"
+            }
+        }
+    }
+}

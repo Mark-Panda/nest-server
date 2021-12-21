@@ -1,0 +1,16 @@
+{
+  "name": "own-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "play": "prisma playground --port 4000 -s",
+    "admin": "prisma admin ",
+    "deploy": "prisma deploy ",
+    "init": "prisma reset -f ",
+    "query": "graphql query ",
+    "schema": "graphql get-schema"
+  },
+  "author": "liutonghui",
+  "license": "ISC"
+}

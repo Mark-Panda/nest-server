@@ -1,0 +1,8 @@
+
+projects:
+  own:
+    schemaPath: "/tmp/own.graphql"
+    modelsPath: "./../own/models"
+    schemaMerge: "../../services/own.graphql"
+    extensions:
+      prisma: config/prisma.yml
