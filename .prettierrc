@@ -5,5 +5,5 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "semi": true,
-    "requirePragma": false,
+    "requirePragma": false
 }

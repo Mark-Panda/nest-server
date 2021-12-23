@@ -8,7 +8,7 @@ import { Column, ApiProperty, ApiPropertyEnum, ColumnEnum } from '@app/public-de
 export const ACCOUNT_ADMIN_STATUS = ['未审核', '已审核', '已冻结'];
 
 /**
- * 用户数据实体
+ * 数据实体
  */
 @Entity()
 export class AccountAdmin extends AccountEntity {

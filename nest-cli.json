@@ -1,18 +1,18 @@
 {
     "collection": "@nestjs/schematics",
-    "sourceRoot": "apps/termial/src",
+    "sourceRoot": "apps/account/src",
     "compilerOptions": {
         "webpack": true,
-        "tsConfigPath": "apps/termial/tsconfig.app.json"
+        "tsConfigPath": "apps/account/tsconfig.app.json"
     },
     "projects": {
-        "termial": {
+        "account": {
             "type": "application",
-            "root": "apps/termial",
+            "root": "apps/account",
             "entryFile": "main",
-            "sourceRoot": "apps/termial/src",
+            "sourceRoot": "apps/account/src",
             "compilerOptions": {
-                "tsConfigPath": "apps/termial/tsconfig.app.json"
+                "tsConfigPath": "apps/account/tsconfig.app.json"
             }
         },
         "public-tool": {

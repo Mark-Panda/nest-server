@@ -24,7 +24,7 @@ NODE_ENV=production yarn start // 加载 production.yaml 覆盖配置
 一般情况下需要一个个单独启动服务
 
 ```sh
-yarn start:dev termial
+yarn start:dev account
 ```
 
 ### 部署
